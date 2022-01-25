@@ -1,0 +1,19 @@
+query allProducts{
+  allProduct{
+    title
+    slug{
+      current
+    }
+    defaultProductVariant {
+      price
+      images {
+      	asset {
+          altText,
+          source {
+            url
+          }
+        }
+      }
+    }
+  }
+}
